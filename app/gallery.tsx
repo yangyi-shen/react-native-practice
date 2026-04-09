@@ -1,10 +1,10 @@
 import { GalleryFlatList } from "@/components/gallery-flat-list";
 import { ThemeColors, ThemeSpacing, ThemeTypography } from "@/constants/theme";
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 
 export default function Gallery() {
   return (
-    <View style={styles.main}>
+    <ScrollView style={styles.main}>
       <View style={styles.headerView}>
         <Text style={ThemeTypography.title}>
           Trang trình bày ảnh trứng vịt lộn
@@ -17,7 +17,7 @@ export default function Gallery() {
         </Text>
       </View>
       <GalleryFlatList />
-    </View>
+    </ScrollView>
   );
 }
 
