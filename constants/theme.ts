@@ -48,7 +48,8 @@ export const ThemePageStructures = StyleSheet.create({
   },
   headerView: {
     paddingHorizontal: ThemeSpacing.spacing_4,
-    paddingVertical: ThemeSpacing.spacing_2,
+    paddingTop: ThemeSpacing.spacing_4,
+    paddingBottom: ThemeSpacing.spacing_2,
   },
   bodyView: {
     paddingHorizontal: ThemeSpacing.spacing_4,
