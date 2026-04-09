@@ -39,6 +39,6 @@ const styles = StyleSheet.create({
     /* gap handled by galleryFlatListGapStyle */
   },
   galleryFlatListGapStyle: {
-    gap: ThemeSpacing.spacing_2,
+    gap: ThemeSpacing.spacing_1,
   },
 });
