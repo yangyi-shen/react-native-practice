@@ -15,6 +15,12 @@ export default function TabLayout() {
           title: "Trang trình bày",
         }}
       />
+      <Tabs.Screen
+        name="contact"
+        options={{
+          title: "Liên hệ",
+        }}
+      />
     </Tabs>
   );
 }
