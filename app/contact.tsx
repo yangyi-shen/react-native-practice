@@ -45,7 +45,10 @@ export default function Contact() {
       </View>
       <View style={styles.FacebookBtnView}>
         <Pressable
-          style={styles.FacebookBtnPressable}
+          style={({ pressed }) => [
+            styles.FacebookBtnPressable,
+            pressed && styles.FacebookBtnPressableActive,
+          ]}
           onPress={onFacebookBtnPress}
         >
           <MaterialIcons style={styles.FacebookBtnIcon} name="facebook" />
@@ -69,6 +72,9 @@ const styles = StyleSheet.create({
     paddingVertical: ThemeSpacing.spacing_1,
     paddingHorizontal: ThemeSpacing.spacing_4,
     borderRadius: ThemeSpacing.spacing_1,
+  },
+  FacebookBtnPressableActive: {
+    backgroundColor: ThemeColors.buttonBackgroundActive,
   },
   FacebookBtnIcon: {
     fontSize: ThemeSpacing.spacing_9,
