@@ -3,11 +3,15 @@ import { FlatList, StyleSheet } from "react-native";
 import { GalleryImage } from "./gallery-image";
 
 import gallery1Img from "@/assets/images/gallery/gallery-1.jpg";
+import gallery10Img from "@/assets/images/gallery/gallery-10.jpg";
 import gallery2Img from "@/assets/images/gallery/gallery-2.jpg";
 import gallery3Img from "@/assets/images/gallery/gallery-3.jpg";
 import gallery4Img from "@/assets/images/gallery/gallery-4.jpg";
 import gallery5Img from "@/assets/images/gallery/gallery-5.jpg";
 import gallery6Img from "@/assets/images/gallery/gallery-6.jpg";
+import gallery7Img from "@/assets/images/gallery/gallery-7.jpg";
+import gallery8Img from "@/assets/images/gallery/gallery-8.jpg";
+import gallery9Img from "@/assets/images/gallery/gallery-9.jpg";
 
 export function GalleryFlatList() {
   const galleryImages = [
@@ -17,6 +21,10 @@ export function GalleryFlatList() {
     gallery4Img,
     gallery5Img,
     gallery6Img,
+    gallery7Img,
+    gallery8Img,
+    gallery9Img,
+    gallery10Img,
   ];
 
   return (
@@ -27,6 +35,7 @@ export function GalleryFlatList() {
       data={galleryImages}
       numColumns={2}
       renderItem={({ item }) => <GalleryImage source={item} />}
+      scrollEnabled={false}
     />
   );
 }
