@@ -1,16 +1,16 @@
 import { GalleryFlatList } from "@/components/gallery-flat-list";
-import { ThemeColors, ThemeSpacing, ThemeTypography } from "@/constants/theme";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { ThemePageStructures, ThemeTypography } from "@/constants/theme";
+import { ScrollView, Text, View } from "react-native";
 
 export default function Gallery() {
   return (
-    <ScrollView style={styles.main}>
-      <View style={styles.headerView}>
+    <ScrollView style={ThemePageStructures.main}>
+      <View style={ThemePageStructures.headerView}>
         <Text style={ThemeTypography.title}>
           Trang trình bày ảnh trứng vịt lộn
         </Text>
       </View>
-      <View style={styles.bodyView}>
+      <View style={ThemePageStructures.bodyView}>
         <Text style={ThemeTypography.default}>
           Ở đậy, bạn có thể ngắm và hưởng thức những bước ảnh của nhiều loại
           trứng vịt lộn.
@@ -20,17 +20,3 @@ export default function Gallery() {
     </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  main: {
-    flex: 1,
-    backgroundColor: ThemeColors.background,
-  },
-  headerView: {
-    paddingHorizontal: ThemeSpacing.spacing_4,
-    paddingVertical: ThemeSpacing.spacing_2,
-  },
-  bodyView: {
-    paddingHorizontal: ThemeSpacing.spacing_4,
-  },
-});

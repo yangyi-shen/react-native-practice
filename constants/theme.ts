@@ -40,3 +40,17 @@ export const ThemeColors = {
   buttonContent: "#fff",
   buttonBackground: "#3b5998",
 };
+
+export const ThemePageStructures = StyleSheet.create({
+  main: {
+    flex: 1,
+    backgroundColor: ThemeColors.background,
+  },
+  headerView: {
+    paddingHorizontal: ThemeSpacing.spacing_4,
+    paddingVertical: ThemeSpacing.spacing_2,
+  },
+  bodyView: {
+    paddingHorizontal: ThemeSpacing.spacing_4,
+  },
+});

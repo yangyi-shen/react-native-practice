@@ -1,4 +1,9 @@
-import { ThemeColors, ThemeSpacing, ThemeTypography } from "@/constants/theme";
+import {
+  ThemeColors,
+  ThemePageStructures,
+  ThemeSpacing,
+  ThemeTypography,
+} from "@/constants/theme";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import {
   Alert,
@@ -26,13 +31,13 @@ export default function Contact() {
   }
 
   return (
-    <View style={styles.main}>
-      <View style={styles.headerView}>
+    <View style={ThemePageStructures.main}>
+      <View style={ThemePageStructures.headerView}>
         <Text style={ThemeTypography.title}>
           Liên hệ với đội cận vệ trứng vịt lộn!
         </Text>
       </View>
-      <View style={styles.bodyView}>
+      <View style={ThemePageStructures.bodyView}>
         <Text style={ThemeTypography.default}>
           Nếu bạn nghỉ trong tim mình có đủ cảm đam mê hăng hái đối với món ăn
           tuyệt vời này, hãy tham gia vào nhóm Facebook của chúng ta!
@@ -52,17 +57,6 @@ export default function Contact() {
 }
 
 const styles = StyleSheet.create({
-  main: {
-    flex: 1,
-    backgroundColor: ThemeColors.background,
-  },
-  headerView: {
-    paddingHorizontal: ThemeSpacing.spacing_4,
-    paddingVertical: ThemeSpacing.spacing_2,
-  },
-  bodyView: {
-    paddingHorizontal: ThemeSpacing.spacing_4,
-  },
   FacebookBtnView: {
     alignItems: "center",
     paddingTop: ThemeSpacing.spacing_4,
