@@ -4,7 +4,7 @@
 
 ### todo-list
 
-- [ ] Điều hướng app
+- [x] Điều hướng app
   - [x] Trang chủ (index.tsx)
     - [x] Ảnh trứng vịt lộn
     - [x] Biểu tả cơ bản về món ăn trứng vịt lôn
