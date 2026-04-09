@@ -39,6 +39,7 @@ export const ThemeColors = {
   background: "#fff",
   buttonContent: "#fff",
   buttonBackground: "#3b5998",
+  buttonBackgroundActive: "#536da4",
 };
 
 export const ThemePageStructures = StyleSheet.create({
