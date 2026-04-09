@@ -29,7 +29,7 @@ export const ThemeTypography = StyleSheet.create({
   },
 });
 
-const SpacingKeys = getRange(16).map((i) => `spacing_${i}` as const);
+const SpacingKeys = getRange(100).map((i) => `spacing_${i}` as const);
 type SpacingKeyType = (typeof SpacingKeys)[number];
 export const ThemeSpacing = Object.fromEntries(
   SpacingKeys.map((key, i) => [key, i * BASE_SPACING_PX]),
@@ -37,4 +37,6 @@ export const ThemeSpacing = Object.fromEntries(
 
 export const ThemeColors = {
   background: "#fff",
+  buttonContent: "#fff",
+  buttonBackground: "#3b5998",
 };
